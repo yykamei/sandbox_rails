@@ -55,3 +55,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'rbs_rails', require: false
+gem 'steep', github: 'soutaro/steep', require: false
+gem "rbs-inline", "~> 0.6.0", :require => false
