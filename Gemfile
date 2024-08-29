@@ -58,4 +58,4 @@ end
 
 gem 'rbs_rails', require: false
 gem 'steep', github: 'soutaro/steep', require: false
-gem "rbs-inline", "~> 0.6.0", :require => false
+gem "rbs-inline", "~> 0.7.0", :require => false

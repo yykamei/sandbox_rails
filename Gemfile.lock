@@ -225,7 +225,7 @@ GEM
       ffi (~> 1.0)
     rbs (3.5.3)
       logger
-    rbs-inline (0.6.0)
+    rbs-inline (0.7.0)
       prism (>= 0.29, < 0.31)
       rbs (~> 3.5.0)
     rbs_rails (0.12.0)
@@ -330,7 +330,7 @@ DEPENDENCIES
   jbuilder
   puma (>= 5.0)
   rails (~> 7.2.1)
-  rbs-inline (~> 0.6.0)
+  rbs-inline (~> 0.7.0)
   rbs_rails
   rubocop-rails-omakase
   selenium-webdriver
