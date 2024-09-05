@@ -1,26 +1,26 @@
-require 'rbs_rails/rake_task'
+require "rbs_rails/rake_task"
 
 namespace :rbs do
-  desc 'CI'
+  desc "CI"
   task ci: %i[clean collection rbs_rails:all rbs_inline steep]
 
-  desc 'Clean up all RBS related files'
+  desc "Clean up all RBS related files"
   task :clean do
     rm_rf %w[sig/rbs_rails sig/z_rbs_inline .gem_rbs_collection]
   end
 
   task :collection do
-    sh 'rbs', 'collection', 'install'
+    sh "rbs", "collection", "install"
   end
 
-  desc 'Generate RBS with rbs-inline'
+  desc "Generate RBS with rbs-inline"
   task :rbs_inline do
-    sh 'rbs-inline', 'app', '--opt-out', '--output=sig/z_rbs_inline/app'
+    sh "rbs-inline", "app", "--opt-out", "--output=sig/z_rbs_inline/app"
   end
 
-  desc 'Run steep check'
+  desc "Run steep check"
   task :steep do
-    sh 'steep', 'check'
+    sh "steep", "check"
   end
 end
 

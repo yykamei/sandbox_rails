@@ -54,6 +54,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'rbs_rails', require: false
-gem 'steep', github: 'soutaro/steep', require: false
-gem "rbs-inline", :require => false
+gem "rbs_rails", require: false
+gem "steep", github: "soutaro/steep", require: false
+gem "rbs-inline", require: false

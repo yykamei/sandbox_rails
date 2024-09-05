@@ -1,5 +1,5 @@
 class Foo
-  def hello #: true
+  def hello # : true
     true
   end
 end
