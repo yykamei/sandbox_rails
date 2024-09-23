@@ -55,5 +55,5 @@ group :test do
 end
 
 gem "rbs_rails", require: false
-gem "steep", github: "soutaro/steep", require: false
+gem "steep", require: false
 gem "rbs-inline", require: false
