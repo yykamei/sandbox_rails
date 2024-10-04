@@ -5,21 +5,21 @@ namespace :rbs do
   task ci: %i[clean collection rbs_rails:all rbs_inline steep]
 
   desc "Clean up all RBS related files"
-  task :clean do
+  task clean: :environment do
     rm_rf %w[sig/rbs_rails sig/z_rbs_inline .gem_rbs_collection]
   end
 
-  task :collection do
+  task collection: :environment do
     sh "rbs", "collection", "install"
   end
 
   desc "Generate RBS with rbs-inline"
-  task :rbs_inline do
+  task rbs_inline: :environment do
     sh "rbs-inline", "app", "--opt-out", "--output=sig/z_rbs_inline/app"
   end
 
   desc "Run steep check"
-  task :steep do
+  task steep: :environment do
     sh "steep", "check"
   end
 end
