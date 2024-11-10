@@ -25,6 +25,14 @@ gems:
     revision: 2a4c50bcdef253f577aac568db63e97e10901b98
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
+- name: actiontext
+  version: '7.2'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9b07b7bde4c9f656f3f6d785bd676320032cecb4
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
 - name: actionview
   version: '6.0'
   source:
@@ -82,6 +90,10 @@ gems:
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: base64
+  version: '0'
+  source:
+    type: stdlib
+- name: benchmark
   version: '0'
   source:
     type: stdlib
@@ -227,6 +239,14 @@ gems:
     type: git
     name: ruby/gem_rbs_collection
     revision: 2a4c50bcdef253f577aac568db63e97e10901b98
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rails-html-sanitizer
+  version: '1.6'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 9b07b7bde4c9f656f3f6d785bd676320032cecb4
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: railties
