@@ -133,6 +133,10 @@ gems:
   version: '0'
   source:
     type: stdlib
+- name: digest
+  version: '0'
+  source:
+    type: stdlib
 - name: erb
   version: '0'
   source:
@@ -313,6 +317,10 @@ gems:
     revision: 9b07b7bde4c9f656f3f6d785bd676320032cecb4
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
+- name: stringio
+  version: '0'
+  source:
+    type: stdlib
 - name: tempfile
   version: '0'
   source:
